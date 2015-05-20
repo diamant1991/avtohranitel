@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<title>Автохранитель</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="" >
+	<meta name="description" content="">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/main.less">
+	<script src="js/less.min.js"></script>
+	<script src="js/modernizr-2.8.3.min.js"></script>	
+</head>
+<body>
+<div class="top-panel">
+	<div class="container">
+		<nav class="nav">
+			<ul class="clearfix">
+				<li><a href="#">
+					<span class="home"></span>
+				</a></li>
+				<li>
+					<a href="#">выбрать транспортное средство</a>
+					<ul class="dropdown">
+						<li><a href="#">Автомобили</a></li>
+						<li><a href="#">Мотоциклы, Мопеды, Cкутеры</a></li>
+						<li><a href="#">Cнегоходы </a></li>
+						<li><a href="#">Квадроциклы</a></li>
+						<li><a href="#">Гидроциклы</a></li>
+						<li><a href="#">Катера, Лодки, Яхты</a></li>
+						<li><a href="#">Авиа техника</a></li>
+					</ul>
+				</li>
+				<li><a href="#">пошив</a></li>
+				<li><a href="#">доставка и оплата</a></li>
+				<li><a href="#">отзывы</a></li>
+			</ul>
+		</nav>
+	</div>
+</div><!-- top-panel -->
+
+<div class="header-block avtochecly">
+	<div class="container">
+		<header class="clearfix">
+			<div class="logo">
+				<a href="#">
+					<img src="images/logo.png" alt="">
+				</a>
+				<p>Продажа и пошив защитных чехлов тентов</p>
+			</div>
+			<div class="right-block">
+				<div class="city">
+					Ваш город - <a href="#">Москва</a>?
+				</div>
+				<div class="tel">
+					8 (800) 775-90-31
+				</div>
+				<a href="#" class="get-call-link">закажите бесплатный звонок</a>
+			</div>
+		</header>
+		<div class="title">
+			<p>ЗАЩИТНЫЕ ЧЕХЛЫ ТЕНТЫ</p>
+			<p>на кузов автомобиля</p>
+		</div>
+		<div class="avto-img">
+			<img src="images/avto.png" alt="">
+		</div>
+		<div class="clear"></div>
+		<div class="s-title">
+			<p>ДОСТАВКА по санкт-петербургу</p><br>
+			<p>и ленинградской области</p>
+		</div>
+		<div class="clear"></div>
+		<div class="info-title">
+			Узнать стоимость чехла вместе со стоимостью доставки <br>для Вашего автомобиля прямо сейчас:
+		</div>
+	</div>
+</div><!-- main block -->
+
+<div class="move">
+	<div class="container">
+		<div class="select">
+			<a href="javascript:void(0);" class="slct">Выберите марку</a>
+			<ul class="drop">
+				<li><a >Acura</a></li>
+				<li><a >Alfa Romeo</a></li>
+				<li><a >Chevrolet</a></li>
+				<li><a >Chrysler</a></li>
+				<li><a >Saab</a></li>
+				<li><a >Mercedes-Benz</a></li>
+			</ul>
+			<input type="hidden" id="select" />
+		</div>
+	</div>
+</div><!-- move -->
+
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script>
+	// Select
+$('.slct').click(function(){
+	
+	var dropBlock = $(this).parent().find('.drop');
+
+
+	if( dropBlock.is(':hidden') ) {
+		dropBlock.slideDown();
+
+		
+		$(this).addClass('active');
+
+		$('.drop').find('li').click(function(){
+
+
+			var selectResult = $(this).html();
+
+
+			$(this).parent().parent().find('input').val(selectResult);
+
+			$(this).parent().parent().find('.slct').removeClass('active').html(selectResult);
+
+			dropBlock.slideUp();
+		});
+
+	} else {
+		$(this).removeClass('active');
+		dropBlock.slideUp();
+	}
+	return false;
+});
+</script>
+</body>
+</html>
