@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/main.less">
+	<link rel="stylesheet" href="css/dscountdown.css">
 	<script src="js/less.min.js"></script>
 	<script src="js/modernizr-2.8.3.min.js"></script>	
 </head>
@@ -22,7 +23,7 @@
 	<div class="container">
 		<nav class="nav">
 			<ul class="clearfix">
-				<li><a href="#">
+				<li><a href="#home" class="toplink">
 					<span class="home"></span>
 				</a></li>
 				<li>
@@ -37,15 +38,15 @@
 						<li><a href="#">Авиа техника</a></li>
 					</ul>
 				</li>
-				<li><a href="#">пошив</a></li>
-				<li><a href="#">доставка и оплата</a></li>
-				<li><a href="#">отзывы</a></li>
+				<li><a href="#sewing" class="toplink">пошив</a></li>
+				<li><a href="#shipping" class="toplink">доставка и оплата</a></li>
+				<li><a href="#review" class="toplink">отзывы</a></li>
 			</ul>
 		</nav>
 	</div>
 </div><!-- top-panel -->
 
-<div class="header-block avtochecly">
+<div class="header-block avtochecly" id="home">
 	<div class="container">
 		<header class="clearfix">
 			<div class="logo">
@@ -56,12 +57,12 @@
 			</div>
 			<div class="right-block">
 				<div class="city">
-					Ваш город - <a href="#">Москва</a>?
+					Ваш город - <a class="city-link">Москва</a>?
 				</div>
 				<div class="tel">
 					8 (800) 775-90-31
 				</div>
-				<a href="#" class="get-call-link">закажите бесплатный звонок</a>
+				<a class="get-call-link">закажите бесплатный звонок</a>
 			</div>
 		</header>
 		<div class="title">
@@ -236,7 +237,7 @@
 		<div class="bot-text">
 			<p>Доставка в г. Томск почтой России будет стоить 350р, курьерской службой (до дома) DPD – 300 р. <br> 
 При заказе двух и более изделий – доставка – бесплатно!</p>
-          <a href="#" class="more">подробнее о доставке</a> 
+          <a class="more post-link">подробнее о доставке</a> 
 		</div>
 
 		
@@ -390,6 +391,12 @@
 			<div class="box-img">
 				<img src="images/box.png" alt="">
 			</div>
+			<div class="timer">
+				<div class="title">
+					До конца акции:
+				</div>
+				<div class="countdown"></div>
+			</div>
 		</div>
 		<div class="right-block">
 			<form>
@@ -487,7 +494,7 @@
 	</div>
 </div><!-- defender -->
 
-<div class="payment">
+<div class="payment" id="shipping">
 	<div class="container">
 		<header>
 			<h3>оплата и доставка</h3>
@@ -504,7 +511,7 @@
 					</header>
 					<ol>
 						<li>Наличными при получении заказа</li>
-						<li>Электронным платежом (<a href="#">как именно</a> )</li>
+						<li>Электронным платежом (<a class="payment-link">как именно</a> )</li>
 						<li>Банковским переводом юридического или физического лица </li>
 					</ol>
 					<a href="#" class="link-btn">оплатить заказ прямо сейчас</a>
@@ -523,19 +530,19 @@
 					<p>В москве:</p>
 					<ol>
 						<li>
-							Самовывоз (см. <a href="#">адреса пунктов выдачи заказов</a>) 
+							Самовывоз (см. <a class="pvz-link">адреса пунктов выдачи заказов</a>) 
 						</li>
 						<li>
-							Курьерская доставка до адреса (<a href="#">стоимость</a>) 
+							Курьерская доставка до адреса (<a class="delivery-link">стоимость</a>) 
 						</li>
 					</ol>
 					<p>в городах рф:</p>
 					<ol>
 						<li>
-							На почте России (<a href="#">тарифы на доставку</a>)
+							На почте России (<a class="post-link">тарифы на доставку</a>)
 						</li>
 						<li>
-							Курьерская доставка до адреса (<a href="#">стоимость</a>)
+							Курьерская доставка до адреса (<a class="express-link">стоимость</a>)
 						</li>
 					</ol>
 				</div>
@@ -548,7 +555,7 @@
 	</div>
 </div><!-- payment -->
 
-<div class="review avto-review">
+<div class="review avto-review" id="review">
 	<div class="container">
 		<h3>отзывы наших клиентов:</h3>
 		<div class="review-cont clearfix">
@@ -612,7 +619,7 @@
 	</div>
 </div><!-- review -->
 
-<div class="form">
+<div class="form" id="sewing">
 	<div class="container clearfix">
 		<div class="left-block">
 			<header>
@@ -662,7 +669,7 @@
 			Остались вопросы?
 		</div>
 		<div class="right-block">
-			<a href="#" class="link-btn">получить консультацию</a>
+			<a class="link-btn ques-link">получить консультацию</a>
 		</div>
 	</div>
 </div><!-- have-ques-->
@@ -671,10 +678,10 @@
 	<div class="container clearfix">
 		<div class="left-block">
 			<ul>
-				<li><a href="#">» <span>Оплатить заказ</span></a></li>
+				<li><a class="payment-link">» <span>Оплатить заказ</span></a></li>
 				<li><a href="#">» <span>Сотрудничество</span></a></li>
-				<li><a href="#">» <span>Адреса выдачи заказов в Москве</span></a></li>
-				<li><a href="#">» <span>Политика конфиденциальности и <br>
+				<li><a class="pvz-link">» <span>Адреса выдачи заказов в Москве</span></a></li>
+				<li><a class="privacy-link">» <span>Политика конфиденциальности и <br>
    неразглашения конфиденциальных</span></a></li>
 			</ul>
 		</div>
@@ -705,16 +712,16 @@
 			<table>
 				<tbody><tr>
 					<td>
-						<img src="images/visa.png" alt="">
+						<a href="#" class="pay-icon visa-con"></a>
 					</td>
 					<td>
-						<img src="images/mastercard.png" alt="">
+						<a href="#" class="pay-icon mc-icon"></a>
 					</td>
 					<td>
-						<img src="images/sber.png" alt="">
+						<a href="#" class="pay-icon sber-icon"></a>
 					</td>
 					<td>
-						<img src="images/forma.png" alt="">
+						<a href="#" class="pay-icon forma-icon"></a>
 					</td>
 				</tr>
 			</tbody></table>
@@ -735,8 +742,372 @@
 </footer><!-- footer -->
 
 
+<div class="form-mask"></div>
+<div class="modal" id="cities">
+	<div class="close-btn"></div>
+	<div class="modal-block">
+		<div class="title">
+			Выберите город, в котором Вы находитесь
+		</div>
+		<ul class="city-list clearfix">
+			<li>
+				<ul>
+					<li><a href="#">Абакан</a></li>
+					<li><a href="#">Анадырь</a></li>
+					<li><a href="#">Архангельск</a></li>
+					<li><a href="#">Астрахань</a></li>
+					<li><a href="#">Барнаул</a></li>
+					<li><a href="#">Белгород</a></li>
+					<li><a href="#">Биробиджан</a></li>
+					<li><a href="#">Благовещенск</a></li>
+					<li><a href="#">Брянск</a></li>
+					<li><a href="#">Владивосток</a></li>
+					<li><a href="#">Владикавказ</a></li>
+					<li><a href="#">Владимир</a></li>
+					<li><a href="#">Волгоград</a></li>
+					<li><a href="#">Вологда</a></li>
+					<li><a href="#">Воронеж</a></li>
+					<li><a href="#">Горно-Алтайск</a></li>
+					<li><a href="#">Грозный</a></li>
+					<li><a href="#">Дудинка</a></li>
+					<li><a href="#">Екатеринбург</a></li>
+					<li><a href="#">Иваново</a></li>
+					<li><a href="#">Ижевск</a></li>
+					<li><a href="#">Иркутск</a></li>
+					<li><a href="#">Йошкар-Ола</a></li>
+					<li><a href="#">Казань</a></li>
+					<li><a href="#">Калининград</a></li>
+					<li><a href="#">Калуга</a></li>
+					<li><a href="#">Кемерово</a></li>
+					<li><a href="#">Киров</a></li>
+					<li><a href="#">Кострома</a></li>
+					<li><a href="#">Краснодар</a></li>
+				</ul>
+			</li>
+			<li>
+				<ul>
+					<li><a href="#">Красноярск</a></li>
+					<li><a href="#">Кудымкар</a></li>
+					<li><a href="#">Курган</a></li>
+					<li><a href="#">Курск</a></li>
+					<li><a href="#">Кызыл</a></li>
+					<li><a href="#">Липецк</a></li>
+					<li><a href="#">Магадан</a></li>
+					<li><a href="#">Майкоп</a></li>
+					<li><a href="#">Махачкала</a></li>
+					<li><a href="#">Москва</a></li>
+					<li><a href="#">Москва</a></li>
+					<li><a href="#">Мурманск</a></li>
+					<li><a href="#">Назрань</a></li>
+					<li><a href="#">Нальчик</a></li>
+					<li><a href="#">Нарьян-Мар</a></li>
+					<li><a href="#">Нижний Новгород</a></li>
+					<li><a href="#">Новгород</a></li>
+					<li><a href="#">Новосибирск</a></li>
+					<li><a href="#">Омск</a></li>
+					<li><a href="#">Орел</a></li>
+					<li><a href="#">Оренбург</a></li>
+					<li><a href="#">пгт Агинское</a></li>
+					<li><a href="#">пгт Палана</a></li>
+					<li><a href="#">пгт Тура</a></li>
+					<li><a href="#">пгт Усть-Ордынский</a></li>
+					<li><a href="#">Пенза</a></li>
+					<li><a href="#">Пермь</a></li>
+					<li><a href="#">Петрозаводск</a></li>
+					<li><a href="#">Петропавловск-Камчатский</a></li>
+					<li><a href="#">Псков</a></li>
+				</ul>
+			</li>
+			<li>
+				<ul>
+					<li><a href="#">Ростов-на-Дону</a></li>
+					<li><a href="#">Рязань</a></li>
+					<li><a href="#">Салехард</a></li>
+					<li><a href="#">Самара</a></li>
+					<li><a href="#">Санкт-Петербург</a></li>
+					<li><a href="#">Санкт-Петербург</a></li>
+					<li><a href="#">Саранск</a></li>
+					<li><a href="#">Саратов</a></li>
+					<li><a href="#">Смоленск</a></li>
+					<li><a href="#">Ставрополь</a></li>
+					<li><a href="#">Сыктывкар</a></li>
+					<li><a href="#">Тамбов</a></li>
+					<li><a href="#">Тверь</a></li>
+					<li><a href="#">Томск</a></li>
+					<li><a href="#">Тула</a></li>
+					<li><a href="#">Тюмень</a></li>
+					<li><a href="#">Улан-Удэ</a></li>
+					<li><a href="#">Ульяновск</a></li>
+					<li><a href="#">Уфа</a></li>
+					<li><a href="#">Хабаровск</a></li>
+					<li><a href="#">Ханты-Мансийск</a></li>
+					<li><a href="#">Чебоксары</a></li>
+					<li><a href="#">Челябинск</a></li>
+					<li><a href="#">Черкесск</a></li>
+					<li><a href="#">Чита</a></li>
+					<li><a href="#">Элиста</a></li>
+					<li><a href="#">Южно-Сахалинск</a></li>
+					<li><a href="#">Якутск</a></li>
+					<li><a href="#">Ярославль</a></li>
+				</ul>
+			</li>
+		</ul>
+		<div class="choose-link">
+			<a href="#" class="determine">Определить атоматически</a>
+			<a class="close-link">Закрыть окно</a>		
+		</div>
+	</div>
+</div><!-- cities list modal -->
 
+<div class="modal" id="get-call">
+	<div class="close-btn"></div>
+	<div class="modal-block">
+		<div class="title">
+			ЗАказать обратный звонок
+		</div>
+		<div class="s-title">
+			Введите ваше имя и телефон. Специалисты компании «Под прикрытием» свяжется с вами, чтобы ответить на все интересующие вопросы.
+		</div>
+		<form>
+			<fieldset>
+				<div class="input-block">
+					<p>Ваше имя:</p>
+					<input type="text" placeholder="Ваше имя">
+				</div>
+				<div class="input-block tel-block clearfix">
+					<p>Ваш телефон:</p>
+					<input type="text" placeholder="+7" class="in-1">
+					<input type="text" placeholder="923" class="in-2">
+					<input type="text" placeholder="409-52-89" class="in-3">
+				</div>
+				<div class="input-block">
+					<input type="submit" value="Оставить заявку" class="link-btn">	
+				</div>
+			</fieldset>
+		</form>
+	</div>
+</div><!-- get-call modal-->
+
+<div class="modal" id="payment">
+	<div class="modal-block">
+		<div class="title">
+			Оплатить заказ можно картой <br>или электронными деньгами:
+		</div>
+		<table>
+			<tr>
+				<td></td>
+				<td>
+					<img src="images/yandex.png" alt="">
+				</td>
+				<td>
+					<a href="#">яндекс деньги</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<img src="images/master.png" alt="">
+				</td>
+				<td>
+					<img src="images/visa-m.png" alt="">
+				</td>
+				<td>
+					<a href="#">Пластиковые карты visa, mastercard</a>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>
+					<img src="images/sber-m.png" alt="" style="float:right">
+				</td>
+				<td>
+					<a href="#">перевод на карту сбербанка</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<img src="images/evroset.png" alt="">
+				</td>
+				<td>
+					<img src="images/svaznoy.png" alt="">
+				</td>
+				<td>
+					<a href="#">наличные через терминалы и салоны связи</a>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="close-btn"></div>
+</div><!-- payment modal -->
+
+<div class="modal" id="pvz">
+	<div class="modal-block">
+		<div class="title">
+			ПВЗ в москве
+		</div>
+		<div class="info-text clearfix">
+			<div class="left-img">
+				<img src="images/pvz.png" alt="">
+			</div>
+			<div class="right-block pvz-list">
+				<h4>самовывоз</h4>
+				<ul>
+					<li>
+						г.Ногинск, ш. Энтузиастов, д. 13А
+					</li>
+					<li>
+						г.Ногинск, ш. Энтузиастов, д. 13А
+					</li>
+					<li>
+						г.Ногинск, ш. Энтузиастов, д. 13А
+					</li>
+					<li>
+						г.Ногинск, ш. Энтузиастов, д. 13А
+					</li>
+					<li>
+						г.Ногинск, ш. Энтузиастов, д. 13А
+					</li>
+					<li>
+						г.Ногинск, ш. Энтузиастов, д. 13А
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="close-btn"></div>
+	</div>
+</div><!-- pvz -->
+
+<div class="modal" id="delivery">
+	<div class="modal-block">
+		<div class="title">
+			курьерская доставка по москве
+		</div>
+		<div class="info-text clearfix">
+			<div class="left-img">
+				<img src="images/women.png" alt="">
+			</div>
+			<div class="right-block">
+				<div class="right-table">
+					курьерская доставка по москве и в пределах мкад <br><span>250 рублей</span>
+				</div>
+			</div>
+		</div>
+		<div class="close-btn"></div>
+	</div>
+</div><!-- delivery-->
+
+<div class="modal" id="post">
+	<div class="modal-block">
+		<div class="title">
+			на почте россии
+		</div>
+		<div class="info-text clearfix">
+			<div class="left-img">
+				<img src="images/post.png" alt="">
+			</div>
+			<div class="right-block">
+				<h4>почта россии во все регионы рф по тарифам</h4>
+				<ul>
+					<li>Центральные регионы - <span>590 р</span></li>
+					<li>Дальний восток - <span>590 р</span></li>
+					<li>Центральные регионы - <span>590 р</span></li>
+					<li>Дальний восток - <span>590 р</span></li>
+					<li>Центральные регионы - <span>590 р</span></li>
+					<li>Дальний восток - <span>590 р</span></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="close-btn"></div>
+</div><!-- post -->
+
+<div class="modal" id="express">
+	<div class="modal-block">
+		<div class="title">
+			курьерская доставка
+		</div>
+		<div class="info-text clearfix">
+			<div class="left-img">
+				<img src="images/women.png" alt="">
+			</div>
+			<div class="right-block">
+				<ul>
+					<li>Центральные регионы - <span>590 р</span></li>
+					<li>Дальний восток - <span>590 р</span></li>
+					<li>Центральные регионы - <span>590 р</span></li>
+					<li>Дальний восток - <span>590 р</span></li>
+					<li>Центральные регионы - <span>590 р</span></li>
+					<li>Дальний восток - <span>590 р</span></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="close-btn"></div>
+</div><!-- post -->
+
+<div class="modal" id="get-ques">
+	<div class="modal-block">
+		<div class="title">
+			Появился вопрос? Напишите нам!
+		</div>
+		<div class="info-text clearfix">
+			<form>
+				<fieldset>
+					<div class="top-input clearfix">
+						<div class="input-block">
+							<p>Ваше имя:</p>
+							<input type="text" placeholder="Ваше имя">
+						</div>
+						<div class="input-block tel-block clearfix">
+							<p>Ваш телефон:</p>
+							<input type="text" placeholder="+7" class="in-1">
+							<input type="text" placeholder="923" class="in-2">
+							<input type="text" placeholder="409-52-89" class="in-3">
+						</div>
+					</div>
+					<div class="input-block">
+						<p>Ваш вопрос:</p>
+						<textarea placeholder="Ваш вопрос"></textarea>
+					</div>
+					<div class="input-block">
+						<input type="submit" value="Оставить заявку" class="link-btn">	
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+	<div class="close-btn"></div>
+</div><!-- guet ques -->
+
+<div class="modal" id="privacy">
+	<div class="modal-block">
+		<div class="title">
+			Политика конфиденциальности:
+
+		</div>
+		<div class="privacy-block">
+			Администрация сайта «Автохранитель - автохранитель.рф» не может передавать или раскрывать информацию, предоставленную пользователем (далее Пользователь) третьим лицам, кроме случаев, предусматриваемых законодательством РФ. <br>
+Для регистрации или формирования online-заявки на сайте, пользователь обязан внести некоторую персональную информацию. Для проверки предоставленных данных, сайт оставляет за собой право потребовать доказательства идентичности в онлайн или офлайн режимах. Сайт использует личную информацию Пользователя для обслуживания и для улучшения качества предоставляемых услуг. Часть персональной информации может быть предоставлена банку или платежной системе, в случае, если предоставление этой информации обусловлено процедурой перевода средств платежной системе, услугами которой Пользователь желает воспользоваться. Сайт прилагает все усилия для сбережения в сохранности личных данных Пользователя. Личная информация может быть раскрыта в случаях, описанных законодательством, либо когда администрация сочтет подобные действия необходимыми для соблюдения юридической процедуры, судебного распоряжения или легального процесса необходимого для работы Пользователя с Сайтом. В других случаях, ни при каких условиях, информация, которую Пользователь оставляет при заполнении форм на Сайте, не будет раскрыта третьим лицам.
+<br><br>
+Все предложения или вопросы по поводу настоящей Политики следует сообщать в службу поддержки по адресу электронной почты <a href="#">uteplitelshop@gmail.com</a> или в письменном виде по адресу: г. Москва, Дмитровское ш., д. 27, корп. 1, офис 519. Дата публикации: 30.04.2015 г
+
+		</div>
+		<div class="close-btn"></div>
+	</div>
+</div>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="js/dscountdown.js"></script>
+<script>
+	jQuery(document).ready(function($){
+		$('.countdown').dsCountDown({
+		endDate: new Date("June 24, 2015 23:59:00"),
+		titleDays: 'дней',
+		titleHours: 'часов', 
+		titleMinutes: 'минут', 
+		titleSeconds: 'секунд'
+
+		});
+	});
+</script>
 <script src="js/script.js"></script>
 </body>
 </html>
