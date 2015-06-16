@@ -117,12 +117,12 @@
 			<div class="select">
 				<a href="javascript:void(0);" class="slct">ВЫБЕРИТЕ МАРКУ</a>
 				<ul class="drop">
-					<li><a>Acura</a></li>
-					<li><a>Alfa Romeo</a></li>
-					<li><a>Chevrolet</a></li>
-					<li><a>Chrysler</a></li>
-					<li><a>Saab</a></li>
-					<li><a>Mercedes-Benz</a></li>
+					<li>Acura</li>
+					<li>Alfa Romeo</li>
+					<li>Chevrolet</li>
+					<li>Chrysler</li>
+					<li>Saab</li>
+					<li>Mercedes-Benz</li>
 				</ul>
 				<input type="hidden" id="select">
 			</div>
@@ -132,12 +132,12 @@
 			<div class="select">
 					<a href="javascript:void(0);" class="slct">ВЫБЕРИТЕ МОДЕЛЬ</a>
 					<ul class="drop">
-						<li><a>Модель 1</a></li>
-						<li><a>Модель 2</a></li>
-						<li><a>Модель 3</a></li>
-						<li><a>Модель 4</a></li>
-						<li><a>Модель 5</a></li>
-						<li><a>Модель 6</a></li>
+						<li>Модель 1</li>
+						<li>Модель 2</li>
+						<li>Модель 3</li>
+						<li>Модель 4</li>
+						<li>Модель 5</li>
+						<li>Модель 6</li>
 					</ul>
 					<input type="hidden" id="select">
 				</div>
@@ -292,8 +292,8 @@
 					</div>
 					<div class="input-block tel-block clearfix">
 						<p>Ваш телефон:</p>
-						<input type="text" placeholder="+7" class="in-1">
-						<input type="text" placeholder="923" class="in-2">
+						<input type="text" placeholder="+7" onkeyup="testJump(this);" maxlength="2" class="in-1">
+						<input type="text" placeholder="923" onkeyup="testJump(this);" maxlength="3"  class="in-2">
 						<input type="text" placeholder="409-52-89" class="in-3">
 					</div>
 					<div class="input-block">
@@ -523,8 +523,8 @@
 					</div>
 					<div class="input-block tel-block clearfix">
 						<p>Ваш телефон:</p>
-						<input type="text" placeholder="+7" class="in-1">
-						<input type="text" placeholder="923" class="in-2">
+						<input type="text" placeholder="+7" onkeyup="testJump(this);" maxlength="2" class="in-1">
+						<input type="text" placeholder="923" onkeyup="testJump(this);" maxlength="3"  class="in-2">
 						<input type="text" placeholder="409-52-89" class="in-3">
 					</div>
 					<div class="input-block">
@@ -755,8 +755,8 @@
 				</div>
 				<div class="input-block tel-block clearfix">
 					<p>Ваш телефон:</p>
-					<input type="text" placeholder="+7" class="in-1">
-					<input type="text" placeholder="923" class="in-2">
+					<input type="text" placeholder="+7" onkeyup="testJump(this);" maxlength="2" class="in-1">
+					<input type="text" placeholder="923" onkeyup="testJump(this);" maxlength="3"  class="in-2">
 					<input type="text" placeholder="409-52-89" class="in-3">
 				</div>
 				<div class="input-block">
@@ -938,8 +938,8 @@
 						</div>
 						<div class="input-block tel-block clearfix">
 							<p>Ваш телефон:</p>
-							<input type="text" placeholder="+7" class="in-1">
-							<input type="text" placeholder="923" class="in-2">
+							<input type="text" placeholder="+7" onkeyup="testJump(this);" maxlength="2" class="in-1">
+							<input type="text" placeholder="923" onkeyup="testJump(this);" maxlength="3"  class="in-2">
 							<input type="text" placeholder="409-52-89" class="in-3">
 						</div>
 					</div>
@@ -974,6 +974,7 @@
 	</div>
 </div>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="js/jquery.maskedinput.js"></script>
 <script src="js/dscountdown.js"></script>
 <script>
 	jQuery(document).ready(function($){
