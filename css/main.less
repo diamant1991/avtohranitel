@@ -816,10 +816,14 @@ a{
 			border-radius: 10px;
 			border:1px solid #cfcccc;
 			padding: 9px;
-			height: 460px;
+			height: auto;
 			color: #213c51;
 			font-size: 16px;
 			font-family: 'RopaSansSCProRegular';
+
+				&:nth-child(odd){
+					clear: both;
+				}
 
 				.name,.city{
 					float: right;
@@ -837,6 +841,8 @@ a{
 				a{
 					color: #10a9f8;
 					text-decoration: underline;
+					display: inline-block;
+					
 
 						&:hover{
 							color: #df2703;
@@ -1078,7 +1084,7 @@ footer{
 		}
 .result-item{
 			width: 440px;
-			height: 440px;
+			height: auto;
 			position: relative;
 			border:1px solid #989898;
 			background-color: #fff;
@@ -1139,10 +1145,9 @@ footer{
 					border-radius: 8px;
 				}
 				.total{
-					position: absolute;
-					width: 93%;
-					bottom: 25px;
-					left: 15px;
+					position: relative;
+					width: 98%;
+					margin: 15px 0;
 				}
 		}
 .slct {

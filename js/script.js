@@ -17,6 +17,24 @@ function testJump(x){
     }
 }
 
+
+
+$(document).ready(function(){
+    $.fn.equivalent = function (){
+        var $blocks = $(this),
+            maxH    = $blocks.eq(0).height(); 
+        $blocks.each(function(){
+            maxH = ( $(this).height() > maxH ) ? $(this).height() : maxH;
+        });
+
+        $blocks.height(maxH); 
+    }
+   
+    $('.review-block').equivalent();
+    $('.result-item').equivalent();  
+});
+
+
 	// Select
 $('.slct').click(function(){
 	
