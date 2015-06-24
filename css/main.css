@@ -156,7 +156,7 @@ a {
 .header-block .right-block {
   float: right;
   font-family: 'RopaSansSCProRegular';
-  width: 255px;
+  width: 235px;
 }
 .header-block .right-block .city {
   color: #323131;
@@ -880,6 +880,19 @@ footer .right-block img {
   position: absolute;
   bottom: 45px;
   z-index: 1;
+  left: -70px;
+}
+.snow-img {
+  position: absolute;
+  bottom: 20px;
+  z-index: 1;
+  left: -190px;
+}
+.boat-img {
+  position: absolute;
+  bottom: 20px;
+  z-index: 3;
+  left: -160px;
 }
 .fon-img {
   position: absolute;
@@ -890,14 +903,24 @@ footer .right-block img {
   z-index: 2;
   left: 0;
 }
-.airplane {
+.airplane,
+.snow,
+.boat {
   background: url(../images/airplane-2.jpg) no-repeat;
   background-size: cover;
   position: relative;
 }
-.boat {
-  background: url(../images/boat.jpg) no-repeat;
-  background-size: cover;
+.boat .title,
+.boat .s-title,
+.boat .t-title {
+  z-index: 4;
+}
+.boat .title,
+.boat .s-title {
+  width: 650px;
+}
+.boat .t-title {
+  right: 190px;
 }
 .avtochecly {
   background: url(../images/avto-bg.png) no-repeat;
@@ -909,6 +932,13 @@ footer .right-block img {
   width: 560px;
   position: relative;
   z-index: 2;
+}
+.airplane .title,
+.airplane .s-title {
+  width: 645px;
+}
+.airplane .t-title {
+  right: 184px;
 }
 .info-title {
   width: 100%;
@@ -1206,16 +1236,12 @@ footer .right-block img {
   margin-bottom: 50px;
   margin-top: 15px;
 }
-.snow {
-  background: url(../images/snow.jpg) no-repeat;
-  background-size: cover;
-}
 .snow .title,
 .snow .s-title {
-  width: 635px;
+  width: 620px;
 }
 .snow .t-title {
-  right: 176px;
+  right: 161px;
 }
 .gydro-img {
   width: 1018px;
