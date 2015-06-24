@@ -1041,6 +1041,9 @@ footer .right-block img {
   margin-right: 10px;
   margin-bottom: 10px;
 }
+.result-item:nth-child(odd) {
+  clear: both;
+}
 .result-item header {
   text-align: center;
   text-transform: uppercase;
