@@ -65,6 +65,8 @@ $(document).ready(function () {
 	  $(this).attr('placeholder',$(this).data('placeholder'));
 	});
 
+  $(".in-1").val('+7');
+
 
 	$('.city-link').click(function(){
   	 $('.form-mask').fadeIn(400);
