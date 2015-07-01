@@ -1379,6 +1379,19 @@ footer .right-block img {
   float: left;
   width: 280px;
 }
+#thanks {
+  width: 480px;
+  height: 160px;
+  line-height: 150px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 38px;
+  font-family: 'BebasNeueBold';
+  left: 50%;
+  top: 50%;
+  margin-top: -80px;
+  margin-left: -240px;
+}
 #cities {
   width: 650px;
   margin-left: -325px;
