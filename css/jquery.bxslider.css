@@ -40,7 +40,7 @@ ul.bxslider {
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-controls-auto {
   position: absolute;
-  bottom: -30px;
+  bottom: 15px;
   width: 100%;
 }
 /* LOADER */
@@ -61,25 +61,23 @@ ul.bxslider {
   font-family: Arial;
   font-weight: bold;
   color: #666;
-  padding-top: 20px;
-  display: none;
 }
 .bx-wrapper .bx-pager.bx-default-pager a {
-  background: #666;
+  background: #828282;
   text-indent: -9999px;
   display: block;
-  width: 10px;
-  height: 10px;
+  width: 11px;
+  height: 11px;
   margin: 0 5px;
   outline: 0;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
+  -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+         border-radius: 50%;
 }
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .bx-wrapper .bx-pager.bx-default-pager a.active,
 .bx-wrapper .bx-pager.bx-default-pager a:focus {
-  background: #000;
+  background: #343434;
 }
 .bx-wrapper .bx-pager-item,
 .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
@@ -94,19 +92,19 @@ ul.bxslider {
 /* DIRECTION CONTROLS (NEXT / PREV) */
 .bx-wrapper .bx-prev {
   left: 10px;
-  background: url('../images/controls.png') no-repeat 0 -32px;
+  background: url('../images/bx-prev.png')no-repeat;
 }
 .bx-wrapper .bx-prev:hover,
 .bx-wrapper .bx-prev:focus {
-  background-position: 0 0;
+  background: url(../images/bx-prev-h.png)no-repeat;
 }
 .bx-wrapper .bx-next {
   right: 10px;
-  background: url('../images/controls.png') no-repeat -43px -32px;
+  background: url('../images/bx-next.png')no-repeat;
 }
 .bx-wrapper .bx-next:hover,
 .bx-wrapper .bx-next:focus {
-  background-position: -43px 0;
+  background: url(../images/bx-next-h.png)no-repeat;
 }
 .bx-wrapper .bx-controls-direction a {
   position: absolute;
