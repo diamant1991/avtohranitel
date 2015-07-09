@@ -12,6 +12,7 @@
 	<meta name="description" content="">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/main.less">
 	<link rel="stylesheet" href="css/dscountdown.css">
@@ -162,7 +163,12 @@
 					<header>АВТОХРАНИТЕЛЬ "СТАНДАРТ+"</header>
 					<div class="item-img">
 						<div class="item-table">
-							<img src="images/avto-1.png" alt="">
+							<ul class="bxslider">
+							 	<li><img src="images/avto-1.png"></li>
+							   <li><img src="images/avto-2.png"></li>
+							   <li><img src="images/avto-1.png"></li>
+							   <li><img src="images/avto-2.png"></li>
+							</ul>
 						</div>
 					</div>
 					<div class="item-desc">
@@ -181,7 +187,12 @@
 					<header>Эконом +</header>
 					<div class="item-img">
 						<div class="item-table">
-							<img src="images/avto-2.png" alt="">
+							<ul class="bxslider">
+							 	<li><img src="images/avto-2.png"></li>
+							   <li><img src="images/avto-1.png"></li>
+							   <li><img src="images/avto-2.png"></li>
+							   <li><img src="images/avto-1.png"></li>
+							</ul>
 						</div>
 					</div>
 					<div class="item-desc">
@@ -1101,6 +1112,12 @@
 	</div>
 </div>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+<script>
+	$(document).ready(function(){
+	  $('.bxslider').bxSlider();
+	});
+</script>
 <script src="js/jquery.maskedinput.js"></script>
 <script src="js/dscountdown.js"></script>
 <script>
