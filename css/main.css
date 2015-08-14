@@ -2169,6 +2169,9 @@ footer .right-block img {
   font-family: 'RopaSansSCProRegular';
   border-bottom: 1px solid #98bfdc;
 }
+.link-info a:hover {
+  border-bottom-color: transparent;
+}
 .link-info a:first-child {
   margin-right: 35px;
 }
@@ -2195,6 +2198,9 @@ footer .right-block img {
   font-size: 15px;
   color: #0d47a1;
   border-bottom: 1px solid #6a83bb;
+}
+.item-desc .expand:hover {
+  border-bottom-color: transparent;
 }
 .certificates {
   background: url(../images/defender.jpg);
