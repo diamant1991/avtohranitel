@@ -132,6 +132,9 @@ a {
   vertical-align: middle;
   height: 41px;
 }
+.next-top-panel ul.clearfix li a.active {
+  color: #06b6d6;
+}
 .header-block {
   width: 100%;
   min-width: 980px;
