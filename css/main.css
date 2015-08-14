@@ -124,6 +124,14 @@ a {
   margin: auto;
   background: url(../images/home.png);
 }
+.next-top-panel ul.clearfix li a {
+  font-size: 14px;
+  font-family: 'MuseoSansCyrl100';
+  padding-top: 0;
+  display: table-cell;
+  vertical-align: middle;
+  height: 41px;
+}
 .header-block {
   width: 100%;
   min-width: 980px;
@@ -470,6 +478,37 @@ a {
   right: 75px;
   bottom: 85px;
 }
+.next-defender .title h4 {
+  font-family: 'BebasNeueBook';
+}
+.next-defender .auto-img {
+  width: 404px;
+  height: 389px;
+  margin-left: -202px;
+  bottom: 10px;
+}
+.next-defender .def-1 {
+  left: 85px;
+}
+.next-defender .def-3 {
+  top: 140px;
+  left: 230px;
+}
+.next-defender .def-2 {
+  left: 60px;
+  bottom: 270px;
+}
+.next-defender .def-4 {
+  top: 150px;
+}
+.next-defender .def-5 {
+  right: 90px;
+  top: 240px;
+}
+.next-defender .def-6 {
+  right: 115px;
+  bottom: 85px;
+}
 .payment {
   width: 100%;
   min-width: 980px;
@@ -790,8 +829,8 @@ a {
   background-color: #e1e1e1;
 }
 .have-ques .left-block {
-  width: 410px;
   float: left;
+  width: 410px;
   text-transform: uppercase;
   text-align: right;
   font-size: 40px;
@@ -1161,6 +1200,17 @@ footer .right-block img {
 .filter header.clearfix .yel-arrow {
   margin: 0 15px;
   padding-top: 5px;
+}
+.filter .h4 {
+  font-family: 'BebasNeueBold';
+  color: #292929;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 45px;
+}
+.next-filter {
+  padding-top: 60px;
+  background: #f8fafa;
 }
 .avto-form {
   background-image: none;
@@ -1741,4 +1791,464 @@ footer .right-block img {
 }
 .review-photo.leftside {
   margin-right: 5px;
+}
+.car-blanket {
+  background: url(../images/index2.jpg) no-repeat 50%;
+  background-size: cover;
+  height: 835px;
+}
+.car-blanket .get-call-link {
+  color: #f12a2a !important;
+  border-bottom: 1px dashed #f12a2a !important;
+}
+.car-blanket .get-call-link:hover {
+  color: #d92e2e !important;
+}
+.car-blanket .red-title {
+  text-align: center;
+  margin-top: 40px;
+}
+.car-blanket .red-title p {
+  display: inline-block;
+  font-family: 'BebasNeueBold';
+  font-size: 46px;
+  color: white;
+  background: #a72323;
+  padding: 15px 20px;
+}
+.car-blanket .black-title {
+  text-align: center;
+  margin-top: 25px;
+}
+.car-blanket .black-title p {
+  display: inline-block;
+  font-family: 'RopaSansSCProRegular';
+  font-size: 24px;
+  color: white;
+  text-shadow: 0px 1px 0px #636363;
+  background: #373737;
+  padding: 10px 15px;
+  text-transform: uppercase;
+}
+.feat-header {
+  height: 365px;
+  position: relative;
+  margin-top: 50px;
+}
+.feat-img {
+  position: absolute;
+  left: 50%;
+  margin-left: -182.5px;
+  top: 50%;
+  margin-top: -182.5px;
+}
+.feat-header-next .feat-img {
+  margin-left: -164.5px;
+  margin-top: -164.5px;
+}
+.feat-header-next .feat-icon {
+  width: 65px;
+}
+.feat-header-next .feat-block {
+  width: 300px;
+}
+.feat-header-next .feat-block .text {
+  font-size: 16px;
+}
+.feat-header-next .feat-block h5 {
+  font-size: 18px;
+}
+.feat-header-next .feat-desc {
+  text-align: left !important;
+  padding-right: 0 !important;
+  padding-left: 20px !important;
+  width: 230px;
+}
+.feat-header-next .feat-1 {
+  bottom: 30px;
+  left: 0;
+  top: auto;
+  right: auto;
+}
+.feat-header-next .feat-2 {
+  left: 0;
+  bottom: 150px;
+  right: auto;
+  top: auto;
+}
+.feat-header-next .feat-3 {
+  left: 0;
+  top: 0;
+  right: auto;
+  bottom: auto;
+}
+.feat-header-next .feat-4 {
+  right: 0;
+  top: 0;
+  left: auto;
+  bottom: auto;
+}
+.feat-header-next .feat-5 {
+  right: 0;
+  bottom: 155px;
+  left: auto;
+  top: auto;
+}
+.feat-header-next .feat-6 {
+  bottom: 30px;
+  right: 0;
+  left: auto;
+  top: auto;
+}
+.feat-block {
+  width: 250px;
+  font-family: 'RopaSansSCProRegular';
+  position: absolute;
+}
+.feat-block h5 {
+  text-transform: uppercase;
+  color: black;
+  font-size: 16px;
+}
+.feat-block .text {
+  font-size: 14px;
+  color: #2c2c2c;
+  line-height: 1.3;
+}
+.feat-icon {
+  float: left;
+  width: 40px;
+}
+.feat-desc {
+  float: left;
+  width: 210px;
+}
+.feat-1 {
+  top: 0;
+  left: 100px;
+}
+.feat-1 .feat-desc {
+  padding-right: 30px;
+  text-align: right;
+}
+.feat-2 {
+  top: 100px;
+  left: 40px;
+}
+.feat-2 .feat-desc {
+  padding-right: 30px;
+  text-align: right;
+}
+.feat-3 {
+  top: 190px;
+  left: 15px;
+}
+.feat-3 .feat-desc {
+  padding-right: 30px;
+  text-align: right;
+}
+.feat-4 {
+  bottom: 40px;
+  left: 80px;
+}
+.feat-4 .feat-desc {
+  padding-right: 30px;
+  text-align: right;
+}
+.feat-5 {
+  right: 90px;
+  top: 0;
+}
+.feat-5 .feat-desc {
+  padding-left: 15px;
+  text-align: left;
+}
+.feat-6 {
+  bottom: 25px;
+  right: 90px;
+}
+.feat-6 .feat-desc {
+  padding-left: 15px;
+  text-align: left;
+}
+.info-head {
+  text-align: center;
+}
+.info-head p {
+  display: inline-block;
+  padding: 20px 30px;
+  background: #6b6b6b;
+  text-transform: uppercase;
+  font-family: 'BebasNeueRegular';
+  font-size: 32px;
+  color: white;
+}
+.item-tovar {
+  width: 940px;
+  margin: auto;
+  padding: 30px 25px 20px 25px;
+  background: white;
+  border: 3px solid #bdbdbd;
+  margin-top: 45px;
+}
+.tovar-standart {
+  border-color: #90caf9;
+  -webkit-box-shadow: 0px 0px 10px 0px #4dd0e1;
+  -moz-box-shadow: 0px 0px 10px 0px #4dd0e1;
+  box-shadow: 0px 0px 10px 0px #4dd0e1;
+}
+.tovar-standart .left-item .title {
+  border-color: #03a9f4;
+}
+.tovar-standart .left-item .title h2 {
+  color: #03a9f4;
+}
+.tovar-standart .item-price {
+  background: url(../images/item-price-blu.png) no-repeat;
+}
+.tovar-premium {
+  border-color: #ffd54f;
+}
+.tovar-premium .left-item .title {
+  border-color: #ff5722;
+}
+.tovar-premium .left-item .title h2 {
+  color: #ff5722;
+}
+.tovar-premium .item-price {
+  background: url(../images/item-price-orange.png) no-repeat;
+}
+.tovar-premium .econom-info {
+  background: url(../images/econom-orange.png) no-repeat;
+  text-shadow: 0px -1px 0px #01579b;
+}
+.left-item {
+  float: left;
+  width: 500px;
+  border-right: 2px solid #ebebeb;
+}
+.left-item .title {
+  border-left: 7px solid #616161;
+  padding-left: 10px;
+  padding-top: 2px;
+}
+.left-item .title h3 {
+  text-transform: uppercase;
+  font-family: 'BebasNeueRegular';
+  color: #212121;
+  font-size: 24px;
+  margin-bottom: 3px;
+}
+.left-item .title h2 {
+  text-transform: uppercase;
+  color: #424242;
+  font-size: 45px;
+  font-family: 'BebasNeueBold';
+  display: inline-block;
+}
+.left-item .title .star {
+  position: relative;
+  top: -5px;
+  margin-left: 20px;
+}
+.thumbnail {
+  margin-top: 30px;
+}
+.thumbnail a {
+  display: inline-block;
+  width: 90px;
+  height: 60px;
+  border: 1px solid #d4d4d4;
+}
+.thumbnail a img {
+  width: 87px;
+  height: 57px;
+}
+.right-item {
+  width: 375px;
+  float: right;
+}
+.slide-item {
+  margin-top: 30px;
+}
+.slide-item .bx-wrapper {
+  text-align: center;
+}
+.slide-item .bx-controls-direction {
+  display: none;
+}
+.item-price {
+  width: 100%;
+  height: 154px;
+  background: url(../images/item-price.png) no-repeat;
+  padding-left: 35px;
+  padding-right: 25px;
+  padding-top: 20px;
+}
+.item-price .head {
+  font-size: 22px;
+  color: #424242;
+  text-transform: uppercase;
+  font-family: 'BebasNeueBold';
+}
+.item-price .head span {
+  color: #212121;
+}
+.price-now {
+  float: left;
+  width: 135px;
+}
+.price-now .now {
+  color: #212121;
+  font-size: 49px;
+  font-family: 'BebasNeueBold';
+}
+.price-now .before {
+  text-decoration: line-through;
+  color: #585858;
+  font-size: 30px;
+  font-family: 'BebasNeueRegular';
+}
+.econom-info {
+  float: right;
+  width: 176px;
+  height: 41px;
+  background: url(../images/econom.png) no-repeat;
+  line-height: 40px;
+  font-family: 'RopaSansSCProRegular';
+  font-size: 20px;
+  margin-top: 20px;
+  color: white;
+  text-shadow: 0px -1px 0px #bf360c;
+  padding-left: 20px;
+}
+.price-stat {
+  margin-top: 17px;
+}
+.change-price {
+  margin-top: 20px;
+}
+.change-price .title {
+  text-transform: uppercase;
+  color: #424242;
+  font-size: 23px;
+  font-family: 'BebasNeueRegular';
+  padding-left: 15px;
+}
+.last-buy {
+  margin-top: 30px;
+  font-family: 'RopaSansSCProRegular';
+  font-size: 17px;
+  color: #212121;
+  line-height: 1.2;
+}
+.last-buy span {
+  color: black;
+}
+.order-tovar {
+  margin-top: 25px;
+}
+.order-tovar .link-btn {
+  height: 55px;
+  line-height: 55px;
+  font-size: 32px;
+  letter-spacing: 0.5px;
+  border-bottom-width: 5px;
+}
+.link-info {
+  text-align: center;
+  margin-top: 20px;
+}
+.link-info a {
+  display: inline-block;
+  font-size: 18px;
+  color: #0e83bf;
+  font-family: 'RopaSansSCProRegular';
+  border-bottom: 1px solid #98bfdc;
+}
+.link-info a:first-child {
+  margin-right: 35px;
+}
+.item-desc {
+  margin-top: 25px;
+  font-family: 'RopaSansSCProRegular';
+}
+.item-desc h5 {
+  color: #212121;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+.item-desc p {
+  font-size: 17px;
+  color: #212121;
+  line-height: 1.2;
+}
+.item-desc .expand-link {
+  text-align: center;
+  margin-top: 20px;
+}
+.item-desc .expand {
+  display: inline-block;
+  font-size: 15px;
+  color: #0d47a1;
+  border-bottom: 1px solid #6a83bb;
+}
+.certificates {
+  background: url(../images/defender.jpg);
+  padding: 55px 0;
+}
+.certificates h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'BebasNeueBold';
+  font-size: 49px;
+  color: black;
+}
+.cert-block {
+  float: left;
+  width: 255px;
+  margin-left: 20px;
+}
+.cert-block .cert-desc {
+  text-align: center;
+  color: #212121;
+  font-size: 22px;
+  font-family: 'RopaSansSCProRegular';
+  padding: 10px;
+}
+.cert-container {
+  margin-left: -20px;
+}
+.cert-wrapper {
+  width: 805px;
+  margin: auto;
+  margin-top: 40px;
+}
+.car-blanket-next {
+  height: 700px;
+}
+.car-blanket-next .black-title-first {
+  margin-top: 70px;
+}
+.car-blanket-next .red-title,
+.car-blanket-next .black-title-next {
+  margin-top: 3px;
+}
+.car-covers {
+  height: 540px;
+  padding-top: 45px;
+  background: #ebebeb;
+  background: -moz-linear-gradient(270deg, #ebebeb 0%, white 100%);
+  background: -webkit-linear-gradient(270deg, #ebebeb 0%, white 100%);
+  background: -o-linear-gradient(270deg, #ebebeb 0%, white 100%);
+  background: -ms-linear-gradient(270deg, #ebebeb 0%, white 100%);
+  background: linear-gradient(0deg, #ebebeb 0%, white 100%);
+  border-bottom: 1px solid #d1d1d1;
+}
+.car-covers h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'BebasNeueBold';
+  font-size: 32px;
+  color: #212121;
 }

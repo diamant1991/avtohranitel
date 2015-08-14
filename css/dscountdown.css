@@ -59,6 +59,48 @@
 }
 
 
+.change-price .ds-white .ds-element{
+	width: 57px;
+	height: 57px;
+	background: url(../images/count-small.png)no-repeat;
+	line-height: 57px;
+	position: relative;
+}
+	.change-price .ds-white .ds-element:after{
+		content: '';
+		display:block;
+		width: 3px;
+		height: 10px;
+		background: url(../images/tochka.png)no-repeat;
+		right: -10px;
+		position: absolute;
+		top: 23px;
+	}
+	.change-price .ds-white .ds-element:last-child:after{
+		content: none;
+	}
+
+.change-price .ds-white .ds-element-value{
+	font-family: Arial,sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	padding-top: 0;
+}
+.change-price .dsCountDown.ds-white{
+	padding-right: 0;
+	width: 288px;
+	margin: auto;
+	display: block;
+}
+
+
+.change-price .ds-white .ds-element-title{
+	font-family: Arial,sans-serif;
+	font-size: 14px;
+	color: #424242;
+	bottom: -45px;
+}
+
 
 /* ------------------------- Black Theme ------------------------- */
 .dsCountDown.ds-black {

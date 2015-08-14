@@ -25,3 +25,23 @@
          url('../fonts/BebasNeueRegular.ttf') format('truetype'),
          url('../fonts/BebasNeueRegular.svg#BebasNeueRegular') format('svg');
 }
+
+@font-face {
+    font-family: 'MuseoSansCyrl100';
+    src: url('../fonts/MuseoSansCyrl.eot');
+    src: url('../fonts/MuseoSansCyrl.eot') format('embedded-opentype'),
+         url('../fonts/MuseoSansCyrl.woff2') format('woff2'),
+         url('../fonts/MuseoSansCyrl.woff') format('woff'),
+         url('../fonts/MuseoSansCyrl.ttf') format('truetype'),
+         url('../fonts/MuseoSansCyrl.svg#MuseoSansCyrl') format('svg');
+}
+
+@font-face {
+    font-family: 'BebasNeueBook';
+    src: url('../fonts/BebasNeueBook.eot');
+    src: url('../fonts/BebasNeueBook.eot') format('embedded-opentype'),
+         url('../fonts/BebasNeueBook.woff2') format('woff2'),
+         url('../fonts/BebasNeueBook.woff') format('woff'),
+         url('../fonts/BebasNeueBook.ttf') format('truetype'),
+         url('../fonts/BebasNeueBook.svg#BebasNeueBook') format('svg');
+}
