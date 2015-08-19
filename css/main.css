@@ -1994,12 +1994,22 @@ footer .right-block img {
   background: white;
   border: 3px solid #bdbdbd;
   margin-top: 45px;
+  -webkit-transition: box-shadow 0.2s ease-in-out;
+  -moz-transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
+}
+.item-tovar:hover {
+  -webkit-box-shadow: 0px 0px 10px 0px #bdbdbd;
+  -moz-box-shadow: 0px 0px 10px 0px #bdbdbd;
+  box-shadow: 0px 0px 10px 0px #bdbdbd;
 }
 .tovar-standart {
   border-color: #90caf9;
-  -webkit-box-shadow: 0px 0px 10px 0px #4dd0e1;
-  -moz-box-shadow: 0px 0px 10px 0px #4dd0e1;
-  box-shadow: 0px 0px 10px 0px #4dd0e1;
+}
+.tovar-standart:hover {
+  -webkit-box-shadow: 0px 0px 10px 0px #4dd0cd;
+  -moz-box-shadow: 0px 0px 10px 0px #4dd0cd;
+  box-shadow: 0px 0px 10px 0px #4dd0cd;
 }
 .tovar-standart .left-item .title {
   border-color: #03a9f4;
@@ -2012,6 +2022,11 @@ footer .right-block img {
 }
 .tovar-premium {
   border-color: #ffd54f;
+}
+.tovar-premium:hover {
+  -webkit-box-shadow: 0px 0px 10px 0px #ffab40;
+  -moz-box-shadow: 0px 0px 10px 0px #ffab40;
+  box-shadow: 0px 0px 10px 0px #ffab40;
 }
 .tovar-premium .left-item .title {
   border-color: #ff5722;
@@ -2084,10 +2099,10 @@ footer .right-block img {
 .item-price {
   width: 100%;
   height: 154px;
-  background: url(../images/item-price.png) no-repeat;
   padding-left: 35px;
   padding-right: 25px;
   padding-top: 20px;
+  background: url(../images/item-price-h.png) no-repeat;
 }
 .item-price .head {
   font-size: 22px;
@@ -2261,4 +2276,26 @@ footer .right-block img {
   font-family: 'BebasNeueBold';
   font-size: 32px;
   color: #212121;
+}
+.review-next .review-desc img {
+  background: none;
+}
+.boxHidded {
+  visibility: hidden;
+}
+.fadeIn,
+.fadeOut {
+  visibility: visible;
+}
+.fadeIn {
+  -webkit-animation-duration: 2.5s;
+  -moz-animation-duration: 2.5s;
+  -o-animation-duration: 2.5s;
+  animation-duration: 2.5s;
+}
+.fadeOut {
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -o-animation-duration: 1.5s;
+  animation-duration: 1.5s;
 }

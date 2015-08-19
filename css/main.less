@@ -2173,13 +2173,25 @@ footer{
 	background: #fff;
 	border:3px solid #bdbdbd;
 	margin-top: 45px;
+	-webkit-transition: box-shadow 0.2s ease-in-out;
+		-moz-transition: box-shadow 0.2s ease-in-out;
+			  transition: box-shadow 0.2s ease-in-out;
+
+		&:hover{
+			-webkit-box-shadow: 0px 0px 10px 0px rgba(189, 189, 189, 1);
+			-moz-box-shadow:    0px 0px 10px 0px rgba(189, 189, 189, 1);
+			box-shadow:         0px 0px 10px 0px rgba(189, 189, 189, 1);
+		}
 }
 
 .tovar-standart{
 	border-color: #90caf9;
-	-webkit-box-shadow: 0px 0px 10px 0px rgba(77, 208, 225, 1);
-	-moz-box-shadow:    0px 0px 10px 0px rgba(77, 208, 225, 1);
-	box-shadow:         0px 0px 10px 0px rgba(77, 208, 225, 1);
+
+		&:hover{
+			-webkit-box-shadow: 0px 0px 10px 0px rgba(77, 208, 205, 1);
+			-moz-box-shadow:    0px 0px 10px 0px rgba(77, 208, 205, 1);
+			box-shadow:         0px 0px 10px 0px rgba(77, 208, 205, 1);
+		}
 
 		.left-item .title{
 			border-color: #03a9f4;
@@ -2195,6 +2207,12 @@ footer{
 
 .tovar-premium{
 	border-color: #ffd54f;
+
+		&:hover{
+			-webkit-box-shadow: 0px 0px 10px 0px rgba(255, 171, 64, 1);
+			-moz-box-shadow:    0px 0px 10px 0px rgba(255, 171, 64, 1);
+			box-shadow:         0px 0px 10px 0px rgba(255, 171, 64, 1);
+		}
 
 		.left-item .title{
 			border-color: #ff5722;
@@ -2276,10 +2294,10 @@ footer{
 .item-price{
 	width: 100%;
 	height: 154px;
-	background: url(../images/item-price.png)no-repeat;
 	padding-left: 35px;
 	padding-right: 25px;
 	padding-top: 20px;
+	background: url(../images/item-price-h.png)no-repeat;
 
 		.head{
 			font-size: 22px;
@@ -2468,4 +2486,30 @@ footer{
 		font-size: 32px;
 		color: #212121;
 	}
+}
+
+.review-next .review-desc img{
+	background: none;
+}
+
+.boxHidded{
+	visibility: hidden;
+}
+.fadeIn,
+.fadeOut{
+	visibility: visible;
+}
+
+.fadeIn{
+	-webkit-animation-duration: 2.5s;
+	-moz-animation-duration: 2.5s;
+	-o-animation-duration: 2.5s;
+	animation-duration: 2.5s;
+}
+
+.fadeOut{
+	-webkit-animation-duration: 1.5s;
+	-moz-animation-duration: 1.5s;
+	-o-animation-duration: 1.5s;
+	animation-duration: 1.5s;
 }
