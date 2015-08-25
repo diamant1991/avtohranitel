@@ -125,4 +125,22 @@ $(document).ready(function () {
       });
       return false;
    });
+
+  
+
+
+   $('.expand').click(function() {
+      var toggle = $(this).parent().parent().find('.item-desc-toggle')
+      if(toggle.css('height') == '40px'){
+         toggle.addClass('toggle-height');
+         $(this).text('Свернуть')
+      }
+      else{
+         toggle.removeClass('toggle-height');
+         $(this).text('Развернуть полностью')
+      }
+     
+   });
+
+
 });
