@@ -12,6 +12,7 @@
 	<meta name="description" content="">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="js/fancybox/source/jquery.fancybox.css?v=2.1.5">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/dscountdown.css">
@@ -223,8 +224,8 @@
 						<a href="#" class="link-btn">Заказать</a>
 					</div>
 					<div class="link-info">
-						<a href="#">Доставка</a>
-						<a href="#">Оплата</a>
+						<a class="post-link">Доставка</a>
+						<a class="payment-link">Оплата</a>
 					</div>
 				</div>
 			</div>
@@ -291,8 +292,8 @@
 						<a href="#" class="link-btn">Заказать</a>
 					</div>
 					<div class="link-info">
-						<a href="#">Доставка</a>
-						<a href="#">Оплата</a>
+						<a class="post-link">Доставка</a>
+						<a class="payment-link">Оплата</a>
 					</div>
 				</div>
 			</div>
@@ -360,8 +361,8 @@
 						<a href="#" class="link-btn">Заказать</a>
 					</div>
 					<div class="link-info">
-						<a href="#">Доставка</a>
-						<a href="#">Оплата</a>
+						<a class="post-link">Доставка</a>
+						<a class="payment-link">Оплата</a>
 					</div>
 				</div>
 			</div>
@@ -508,7 +509,7 @@
 			<div class="cert-container clearfix">
 				<div class="cert-block">
 					<div class="cert-img">
-						<img src="images/sert.jpg" height="360" width="254" alt="">
+						<a href="images/sert.jpg" class="fancybox"><img src="images/sert.jpg" alt=""></a> 
 					</div>
 					<div class="cert-desc">
 						Описание <br>сертификата №1
@@ -516,7 +517,7 @@
 				</div>
 				<div class="cert-block">
 					<div class="cert-img">
-						<img src="images/sert.jpg" height="360" width="254" alt="">
+						<a href="images/sert.jpg" class="fancybox"><img src="images/sert.jpg" alt=""></a> 
 					</div>
 					<div class="cert-desc">
 						Описание <br>сертификата №2
@@ -524,7 +525,7 @@
 				</div>
 				<div class="cert-block">
 					<div class="cert-img">
-						<img src="images/sert.jpg" height="360" width="254" alt="">
+						<a href="images/sert.jpg" class="fancybox"><img src="images/sert.jpg" alt=""></a> 
 					</div>
 					<div class="cert-desc">
 						Описание<br> сертификата №3
@@ -1030,6 +1031,81 @@
 	</div>
 </div>
 
+<div class="modal" id="payment">
+	<div class="modal-block">
+		<div class="title">
+			Оплатить заказ можно картой <br>или электронными деньгами:
+		</div>
+		<table>
+			<tr>
+				<td></td>
+				<td>
+					<img src="images/yandex.png" alt="">
+				</td>
+				<td>
+					<a href="#">яндекс деньги</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<img src="images/master.png" alt="">
+				</td>
+				<td>
+					<img src="images/visa-m.png" alt="">
+				</td>
+				<td>
+					<a href="#">Пластиковые карты visa, mastercard</a>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>
+					<img src="images/sber-m.png" alt="" style="float:right">
+				</td>
+				<td>
+					<a href="#">перевод на карту сбербанка</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<img src="images/evroset.png" alt="">
+				</td>
+				<td>
+					<img src="images/svaznoy.png" alt="">
+				</td>
+				<td>
+					<a href="#">наличные через терминалы и салоны связи</a>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="close-btn"></div>
+</div><!-- payment modal -->
+
+<div class="modal" id="post">
+	<div class="modal-block">
+		<div class="title">
+			на почте россии
+		</div>
+		<div class="info-text clearfix">
+			<div class="left-img">
+				<img src="images/post.png" alt="">
+			</div>
+			<div class="right-block">
+				<h4>почта россии во все регионы рф по тарифам</h4>
+				<ul>
+					<li>Центральные регионы - <span>590 р</span></li>
+					<li>Дальний восток - <span>590 р</span></li>
+					<li>Центральные регионы - <span>590 р</span></li>
+					<li>Дальний восток - <span>590 р</span></li>
+					<li>Центральные регионы - <span>590 р</span></li>
+					<li>Дальний восток - <span>590 р</span></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="close-btn"></div>
+</div><!-- post -->
 
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
@@ -1062,6 +1138,12 @@
 
 		});
 	});
+</script>
+<script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+<script type="text/javascript">
+ $(document).ready(function() {
+   $(".fancybox").fancybox();
+ });
 </script>
 <script src="js/scroll.js"></script>
 <script src="js/script.js"></script>
