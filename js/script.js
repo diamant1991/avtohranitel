@@ -127,7 +127,15 @@ $(document).ready(function () {
    });
 
   
-
+   $('.expand-link').each(function() {
+      var lengthDiv = $(this).parent().find('.item-desc-toggle p').text()
+      if(lengthDiv.length > 225){
+         $(this).show();
+      }
+      else{
+         $(this).hide();
+      }
+   });   
 
    $('.expand').click(function() {
       var toggle = $(this).parent().parent().find('.item-desc-toggle')
@@ -142,5 +150,6 @@ $(document).ready(function () {
      
    });
 
+   /*console.log($('#test p').text().length)*/
 
 });

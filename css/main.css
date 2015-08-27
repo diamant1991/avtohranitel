@@ -2338,3 +2338,9 @@ footer .right-block img {
 .toggle-height {
   height: auto;
 }
+@-moz-document url-prefix() {
+  body {
+    background: black;
+    position: relative;
+  }
+}

@@ -176,3 +176,7 @@ ul.bxslider {
   font-size: .85em;
   padding: 10px;
 }
+
+.bx-viewport ul li{
+  z-index: 4 !important;
+}
