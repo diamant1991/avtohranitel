@@ -1828,7 +1828,10 @@ footer .right-block img {
   color: white;
   text-shadow: 0px 1px 0px #636363;
   background: #373737;
-  padding: 10px 15px;
+  height: 40px;
+  line-height: 43px;
+  padding-left: 15px;
+  padding-right: 15px;
   text-transform: uppercase;
 }
 .feat-header {
@@ -2338,9 +2341,8 @@ footer .right-block img {
 .toggle-height {
   height: auto;
 }
-@-moz-document url-prefix() {
-  body {
-    background: black;
-    position: relative;
+@media (max-width: 991px) {
+  .contacts .right-block {
+    margin-left: 115px;
   }
 }
