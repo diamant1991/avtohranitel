@@ -12,13 +12,13 @@
 
         // Scroll Variables (tweakable)
         var framerate = 150; // [Hz]    150
-        var animtime  = 600; // [px]    400
+        var animtime  = 550; // [px]    400
         var stepsize  = 150; // [px]    120
 
         // Pulse (less tweakable)
         // ratio of "tail" to "acceleration"
         var pulseAlgorithm = true;
-        var pulseScale     = 5;    //   8
+        var pulseScale     = 6;    //   8
         var pulseNormalize = 1;
 
         // Keyboard Settings

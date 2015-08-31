@@ -129,7 +129,7 @@ $(document).ready(function () {
   
    $('.expand-link').each(function() {
       var lengthDiv = $(this).parent().find('.item-desc-toggle p').text()
-      if(lengthDiv.length > 225){
+      if(lengthDiv.length > 340){
          $(this).show();
       }
       else{
@@ -139,7 +139,7 @@ $(document).ready(function () {
 
    $('.expand').click(function() {
       var toggle = $(this).parent().parent().find('.item-desc-toggle')
-      if(toggle.css('height') == '40px'){
+      if(toggle.css('height') == '60px'){
          toggle.addClass('toggle-height');
          $(this).text('Свернуть')
       }
@@ -155,19 +155,4 @@ $(document).ready(function () {
 });
 
 
-
-
-
-// DEVICE.JS AND SMOOTH SCROLLIG
-
-function include(url){document.write('<script type="text/javascript" src="'+url+'"></script>')}
-include('js/device.js');
-include('js/jquery.mousewheel.js');
-include('js/jquery.simplr.smoothscroll.js');
-
-  $(function () { 
-    if ($('html').hasClass('desktop')) {
-        $.srSmoothscroll();
-    }
-  });
 
